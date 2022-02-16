@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 @Table(name="ORDERS")
 public class Order {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private Long memberId;
@@ -15,6 +15,4 @@ public class Order {
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
-
-
 }
