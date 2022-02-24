@@ -13,6 +13,7 @@ public class Member {
     private String city;
     private String street;
     private String zipcode;
+    private int age;
 
     public Long getId() {
         return id;
